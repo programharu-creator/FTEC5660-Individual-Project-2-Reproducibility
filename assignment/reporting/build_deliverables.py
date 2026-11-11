@@ -342,7 +342,7 @@ def build_slides(groups):
         c.showPage()
         script.append(f"## Slide {number}: {title}\n\n" + "\n".join("- "+b for b in bullets) + "\n")
     c.save()
-    (OUT/"PRESENTATION_SCRIPT.md").write_text(
+    (OUT/"SLIDE_OUTLINE_EN.md").write_text(
         "# Recording guide (target 10-12 minutes; maximum 15)\n\n"
         "Share this PDF in Zoom, record yourself explaining the results, "
         "and submit an accessible recording link. These files are presentation materials, not a recorded video.\n\n"

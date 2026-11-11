@@ -1,4 +1,4 @@
-# FTEC5660 Project 3: LiTS Reproducibility with DeepSeek
+# FTEC5660 - Individual Project 2 - Reproducibility
 
 **Student:** SANG Yuchen  
 **Student ID:** 1155262204  
@@ -10,7 +10,9 @@ This project runs the authors' LiTS MCTS workflow with DeepSeek and measures the
 
 - [Report: 5 pages](assignment/deliverables/FTEC5660_LiTS_DeepSeek_Report.pdf)
 - [Presentation slides: 10 pages](assignment/deliverables/FTEC5660_Presentation.pdf)
-- [Presentation outline](assignment/deliverables/PRESENTATION_SCRIPT.md)
+- [12-minute English recording script and screen directions](assignment/deliverables/RECORDING_SCRIPT_EN.md)
+- [Printable recording script](assignment/deliverables/FTEC5660_Recording_Script_EN.pdf)
+- [Assignment requirements checklist (Chinese)](assignment/deliverables/REQUIREMENTS_CHECK_CN.md)
 - [Video link: pending recording](assignment/deliverables/VIDEO_LINK.md)
 - [Trial-level CSV](assignment/deliverables/formal_trials.csv)
 - [Results and sample variance](assignment/deliverables/formal_results.json)
