@@ -301,4 +301,8 @@ def main():
 
 
 if __name__ == "__main__":
+    if os.name == "nt" and not sys.flags.utf8_mode:
+        # Upstream artifacts use platform-default open(); enforce UTF-8 on Windows.
+        os.chdir(ROOT)
+        os.execv(sys.executable, [sys.executable, "-X", "utf8", "-m", "assignment.study", *sys.argv[1:]])
     main()

@@ -9,3 +9,6 @@
 
 - DeepSeek strict tool schemas require /beta. The adapter omits strict on the stable endpoint and retains the upstream schema and local validation; this supports answer voting without changing its selection rule.
 - SearchNode.to_dict() omits depth. Depth metrics reconstruct parent-child depth from the saved full_tree artifacts and require one tree per planned question.
+
+- First live smoke: all 11 DeepSeek requests succeeded (3614 input / 284 output tokens), then upstream checkpoint writing failed under Windows cp950 on a superscript character. Retained the incomplete run. The launcher now restarts in Python UTF-8 mode on Windows.
+- Added a Git attribute preserving the downloaded dataset bytes; platform line-ending conversion must not invalidate its SHA256.
