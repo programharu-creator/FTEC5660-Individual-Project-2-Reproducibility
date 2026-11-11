@@ -40,3 +40,10 @@ Thumbs.db
 # mypy
 .mypy_cache/
 jobs/
+
+# Assignment local caches and raw run outputs
+assignment/runs/
+assignment/.cache/
+.env.*
+!.env.example
+!assignment/.env.example

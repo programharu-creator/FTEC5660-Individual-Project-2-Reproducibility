@@ -1,3 +1,5 @@
+> **FTEC5660 reproducibility assignment:** Start with [the experiment guide](assignment/README_CN.md) and [the fixed experiment plan](assignment/experiment_plan.json). Original LiTS documentation follows below.
+
 # LiTS — Language Inference via Tree Search
 
 A modular Python framework for LLM reasoning and planning with tree search (e.g., MCTS, BFS and other custom search algorithms) and chain reasoning (e.g.,ReAct).

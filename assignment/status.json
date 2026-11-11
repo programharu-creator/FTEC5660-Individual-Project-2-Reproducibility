@@ -1,0 +1,9 @@
+{
+  "stage": "ready_for_live_smoke",
+  "offline_tests_passed": 8,
+  "real_api_calls_before_smoke": 0,
+  "python": "3.12.12",
+  "source_commit": "25e94d862cb4514c22d9a80a635e392461769df7",
+  "dataset_sha256": "d0740662f634491425223cd1c8442efa86403a26b06799c954c5061cef6cdd8c",
+  "next": "One-question DeepSeek smoke run; then review usage before larger runs."
+}

@@ -1,0 +1,68 @@
+{
+  "upstream_commit": "25e94d862cb4514c22d9a80a635e392461769df7",
+  "dataset": {
+    "repo": "xinzhel/math500-float",
+    "revision": "d27dc61b1123c2fdc4eea855c802be87dfa9d536",
+    "filename": "test.jsonl",
+    "split": "test",
+    "selection": "first 30 rows in source order; pilot uses first 5 of the same rows",
+    "formal_count": 30,
+    "pilot_count": 5
+  },
+  "model": {
+    "provider": "DeepSeek",
+    "name": "deepseek-flash",
+    "base_url": "https://api.deepseek.com",
+    "thinking": false,
+    "top_p": 1
+  },
+  "study": {
+    "max_steps": [
+      5,
+      10,
+      15
+    ],
+    "baseline_max_steps": 10,
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "search_algorithm": "mcts",
+    "search_framework": "rest",
+    "n_iters": 10,
+    "n_actions": 3,
+    "roll_out_steps": 2,
+    "force_terminating_on_depth_limit": true,
+    "terminate_on_first_solution": true,
+    "sample_size_terminate": 3,
+    "n_for_correctness": 2,
+    "n_for_usefulness": 1,
+    "policy_max_new_tokens": 512
+  },
+  "pilot": {
+    "count": 5,
+    "n_iters": 2,
+    "n_actions": 2,
+    "call_limit": 250
+  },
+  "smoke": {
+    "count": 1,
+    "max_steps": 3,
+    "n_iters": 1,
+    "n_actions": 2,
+    "call_limit": 100
+  },
+  "claim": {
+    "target": "Run the repository's API-compatible MATH500 MCTS workflow and measure a controlled depth-budget change.",
+    "paper": "https://arxiv.org/html/2603.00631v2",
+    "reference": "Table 6, ReST (MCTS): 37/100 with Llama3-8B and the paper's reward setup.",
+    "limits": [
+      "DeepSeek and an API-based GenerativePRM replace the paper's model/reward setup.",
+      "The selected 30 rows do not match the paper's 100-example denominator.",
+      "Depth enforcement and fixed termination/scoring sampling are common adaptations across our groups.",
+      "No original-model causal comparison is claimed without actually running it.",
+      "Pilot settings differ from formal settings and must be reported separately."
+    ]
+  }
+}

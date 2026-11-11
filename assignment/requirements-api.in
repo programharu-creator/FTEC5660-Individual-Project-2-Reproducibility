@@ -1,0 +1,17 @@
+# API-only MATH500 path; local GPU, SQL, geospatial and memory backends are unused.
+openai>=1.35.10
+numpy>=2.2.5
+pydantic>=2.8.2
+python-dotenv
+requests
+httpx
+filelock
+boto3
+aioboto3
+huggingface-hub>=0.30.2,<1.0
+datasets
+ipython
+tiktoken
+inflect
+PyYAML
+pytest
