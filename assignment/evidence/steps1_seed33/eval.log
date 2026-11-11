@@ -1,0 +1,139 @@
+[2026-11-04 14:07:12.523] [INFO] [root] Command: lits-eval --result_dir C:\Users\eula.sang\codex-web\FTEC5660_LiTS_Reproducibility\assignment\runs\formal_steps1_seed33_20261104T060020661248Z --llm-eval none
+[2026-11-04 14:07:12.523] [INFO] [root] Working directory: C:\Users\eula.sang\codex-web\FTEC5660_LiTS_Reproducibility
+[2026-11-04 14:07:12.525] [INFO] [root] Found 30 terminal node files
+[2026-11-04 14:07:12.526] [INFO] [root] Processing 30 files (offset=0, limit=None)
+[2026-11-04 14:07:12.526] [INFO] [root] Using registered evaluator for 'math500'
+[2026-11-04 14:07:12.527] [INFO] [root] Evaluation model: openai/deepseek-flash; enable_think_eval=False
+[2026-11-04 14:07:12.527] [INFO] [root] ========================================
+[2026-11-04 14:07:12.528] [INFO] [root] Detailed comparison:
+[2026-11-04 14:07:13.514] [DEBUG] [lits.eval.answer_voting] Answer voting output: ToolCallOutput(stop_reason='tool_use', tool_calls=[group_answers({'n0': '9'})])
+[2026-11-04 14:07:13.514] [INFO] [root]   [0] Pred='9', Truth='9', Correct=True
+[2026-11-04 14:07:14.218] [DEBUG] [lits.eval.answer_voting] Answer voting output: ToolCallOutput(stop_reason='tool_use', tool_calls=[group_answers({'n0': '42'})])
+[2026-11-04 14:07:14.219] [INFO] [root]   [1] Pred='42', Truth='42', Correct=True
+[2026-11-04 14:07:15.203] [DEBUG] [lits.eval.answer_voting] Answer voting output: ToolCallOutput(stop_reason='tool_use', tool_calls=[group_answers({'n0': '27'})])
+[2026-11-04 14:07:15.203] [INFO] [root]   [2] Pred='27', Truth='27', Correct=True
+[2026-11-04 14:07:15.204] [INFO] [root]   [3] Pred='', Truth='4', Correct=False
+[2026-11-04 14:07:15.963] [DEBUG] [lits.eval.answer_voting] Answer voting output: ToolCallOutput(stop_reason='tool_use', tool_calls=[group_answers({'n0': '2220'})])
+[2026-11-04 14:07:15.963] [INFO] [root]   [4] Pred='2220', Truth='2220', Correct=True
+[2026-11-04 14:07:16.945] [DEBUG] [lits.eval.answer_voting] Answer voting output: ToolCallOutput(stop_reason='tool_use', tool_calls=[group_answers({'n0': '284'})])
+[2026-11-04 14:07:16.945] [INFO] [root]   [5] Pred='284', Truth='284', Correct=True
+[2026-11-04 14:07:17.743] [DEBUG] [lits.eval.answer_voting] Answer voting output: ToolCallOutput(stop_reason='tool_use', tool_calls=[group_answers({'n0': '5'})])
+[2026-11-04 14:07:17.743] [INFO] [root]   [6] Pred='5', Truth='5', Correct=True
+[2026-11-04 14:07:18.592] [DEBUG] [lits.eval.answer_voting] Answer voting output: ToolCallOutput(stop_reason='tool_use', tool_calls=[group_answers({'n0': '-50'})])
+[2026-11-04 14:07:18.593] [INFO] [root]   [7] Pred='-50', Truth='-50', Correct=True
+[2026-11-04 14:07:19.609] [DEBUG] [lits.eval.answer_voting] Answer voting output: ToolCallOutput(stop_reason='tool_use', tool_calls=[group_answers({'n0': '56'})])
+[2026-11-04 14:07:19.609] [INFO] [root]   [8] Pred='56', Truth='28', Correct=False
+[2026-11-04 14:07:20.415] [DEBUG] [lits.eval.answer_voting] Answer voting output: ToolCallOutput(stop_reason='tool_use', tool_calls=[group_answers({'n0': '3'})])
+[2026-11-04 14:07:20.415] [INFO] [root]   [9] Pred='3', Truth='3', Correct=True
+[2026-11-04 14:07:21.537] [DEBUG] [lits.eval.answer_voting] Answer voting output: ToolCallOutput(stop_reason='tool_use', tool_calls=[group_answers({'n0': '13535'})])
+[2026-11-04 14:07:21.537] [INFO] [root]   [10] Pred='13535', Truth='13535', Correct=True
+[2026-11-04 14:07:22.134] [DEBUG] [lits.eval.answer_voting] Answer voting output: ToolCallOutput(stop_reason='tool_use', tool_calls=[group_answers({'n0': '5'})])
+[2026-11-04 14:07:22.135] [INFO] [root]   [11] Pred='5', Truth='5', Correct=True
+[2026-11-04 14:07:23.305] [DEBUG] [lits.eval.answer_voting] Answer voting output: ToolCallOutput(stop_reason='tool_use', tool_calls=[group_answers({'n0': '10'})])
+[2026-11-04 14:07:23.306] [INFO] [root]   [12] Pred='10', Truth='10', Correct=True
+[2026-11-04 14:07:24.228] [DEBUG] [lits.eval.answer_voting] Answer voting output: ToolCallOutput(stop_reason='tool_use', tool_calls=[group_answers({'n0': '144'})])
+[2026-11-04 14:07:24.228] [INFO] [root]   [13] Pred='144', Truth='144', Correct=True
+[2026-11-04 14:07:25.377] [DEBUG] [lits.eval.answer_voting] Answer voting output: ToolCallOutput(stop_reason='tool_use', tool_calls=[group_answers({'n0': '78'})])
+[2026-11-04 14:07:25.377] [INFO] [root]   [14] Pred='78', Truth='78', Correct=True
+[2026-11-04 14:07:26.368] [DEBUG] [lits.eval.answer_voting] Answer voting output: ToolCallOutput(stop_reason='tool_use', tool_calls=[group_answers({'n0': '225'})])
+[2026-11-04 14:07:26.368] [INFO] [root]   [15] Pred='225', Truth='225', Correct=True
+[2026-11-04 14:07:26.937] [DEBUG] [lits.eval.answer_voting] Answer voting output: ToolCallOutput(stop_reason='tool_use', tool_calls=[group_answers({'n0': '720'})])
+[2026-11-04 14:07:26.937] [INFO] [root]   [16] Pred='720', Truth='720', Correct=True
+[2026-11-04 14:07:27.945] [DEBUG] [lits.eval.answer_voting] Answer voting output: ToolCallOutput(stop_reason='tool_use', tool_calls=[group_answers({'n0': '-125'})])
+[2026-11-04 14:07:27.945] [INFO] [root]   [17] Pred='-125', Truth='-125', Correct=True
+[2026-11-04 14:07:28.697] [DEBUG] [lits.eval.answer_voting] Answer voting output: ToolCallOutput(stop_reason='tool_use', tool_calls=[group_answers({'n0': '3'})])
+[2026-11-04 14:07:28.698] [INFO] [root]   [18] Pred='3', Truth='3', Correct=True
+[2026-11-04 14:07:29.396] [DEBUG] [lits.eval.answer_voting] Answer voting output: ToolCallOutput(stop_reason='tool_use', tool_calls=[group_answers({'n0': '72°'})])
+[2026-11-04 14:07:29.396] [INFO] [root]   [19] Pred='72°', Truth='72', Correct=False
+[2026-11-04 14:07:30.567] [DEBUG] [lits.eval.answer_voting] Answer voting output: ToolCallOutput(stop_reason='tool_use', tool_calls=[group_answers({'n0': '2000'})])
+[2026-11-04 14:07:30.567] [INFO] [root]   [20] Pred='2000', Truth='2000', Correct=True
+[2026-11-04 14:07:31.567] [DEBUG] [lits.eval.answer_voting] Answer voting output: ToolCallOutput(stop_reason='tool_use', tool_calls=[group_answers({'n0': '23'})])
+[2026-11-04 14:07:31.567] [INFO] [root]   [21] Pred='23', Truth='23', Correct=True
+[2026-11-04 14:07:32.239] [DEBUG] [lits.eval.answer_voting] Answer voting output: ToolCallOutput(stop_reason='tool_use', tool_calls=[group_answers({'n0': '12'})])
+[2026-11-04 14:07:32.239] [INFO] [root]   [22] Pred='12', Truth='12', Correct=True
+[2026-11-04 14:07:33.117] [DEBUG] [lits.eval.answer_voting] Answer voting output: ToolCallOutput(stop_reason='tool_use', tool_calls=[group_answers({'n0': '17'})])
+[2026-11-04 14:07:33.117] [INFO] [root]   [23] Pred='17', Truth='17', Correct=True
+[2026-11-04 14:07:34.063] [DEBUG] [lits.eval.answer_voting] Answer voting output: ToolCallOutput(stop_reason='tool_use', tool_calls=[group_answers({'n0': '4'})])
+[2026-11-04 14:07:34.063] [INFO] [root]   [24] Pred='4', Truth='4', Correct=True
+[2026-11-04 14:07:35.022] [DEBUG] [lits.eval.answer_voting] Answer voting output: ToolCallOutput(stop_reason='tool_use', tool_calls=[group_answers({'n0': '1.25'})])
+[2026-11-04 14:07:35.022] [INFO] [root]   [25] Pred='1.25', Truth='1.25', Correct=True
+[2026-11-04 14:07:35.866] [DEBUG] [lits.eval.answer_voting] Answer voting output: ToolCallOutput(stop_reason='tool_use', tool_calls=[group_answers({'n0': '2'})])
+[2026-11-04 14:07:35.866] [INFO] [root]   [26] Pred='2', Truth='2', Correct=True
+[2026-11-04 14:07:36.837] [DEBUG] [lits.eval.answer_voting] Answer voting output: ToolCallOutput(stop_reason='tool_use', tool_calls=[group_answers({'n0': '6'})])
+[2026-11-04 14:07:36.837] [INFO] [root]   [27] Pred='6', Truth='6', Correct=True
+[2026-11-04 14:07:37.680] [DEBUG] [lits.eval.answer_voting] Answer voting output: ToolCallOutput(stop_reason='tool_use', tool_calls=[group_answers({'n0': '5'})])
+[2026-11-04 14:07:37.680] [INFO] [root]   [28] Pred='5', Truth='5', Correct=True
+[2026-11-04 14:07:38.431] [DEBUG] [lits.eval.answer_voting] Answer voting output: ToolCallOutput(stop_reason='tool_use', tool_calls=[group_answers({'n0': '83'})])
+[2026-11-04 14:07:38.431] [INFO] [root]   [29] Pred='83', Truth='83', Correct=True
+[2026-11-04 14:07:38.431] [INFO] [root] ========================================
+[2026-11-04 14:07:38.431] [INFO] [root] ================================================================================
+[2026-11-04 14:07:38.432] [INFO] [root] Evaluation Results for formal_steps1_seed33_20261104T060020661248Z
+[2026-11-04 14:07:38.432] [INFO] [root] Dataset: math500, Examples: 30, Correct: 27
+[2026-11-04 14:07:38.432] [INFO] [root] Accuracy: 0.9000 (90.00%)
+[2026-11-04 14:07:38.432] [INFO] [root] ================================================================================
+[2026-11-04 14:07:38.439] [INFO] [root] ================================================================================
+                        INFERENCE USAGE REPORT
+================================================================================
+
+SUMMARY:
+  Total Calls:    418
+  Input Tokens:   190134
+  Output Tokens:  24556
+  Total Time:     410.0s (0.11h)
+  Est. Cost:      $0.94
+
+BY COMPONENT:
+┌───────────────────────┬───────┬───────────┬────────────┬──────────┬───────┬─────────┐
+│          Name         │ Calls │ Input Tok │ Output Tok │ Time (s) │  Cost │ % Total │
+├───────────────────────┼───────┼───────────┼────────────┼──────────┼───────┼─────────┤
+│ evaluator_correctness │  163  │   62282   │    3518    │  138.9   │ $0.24 │  32.8%  │
+│        dynamics       │   96  │   49338   │     96     │   71.9   │ $0.15 │  25.9%  │
+│         policy        │   90  │   45267   │   20739    │  148.1   │ $0.45 │  23.8%  │
+│  evaluator_usefulness │   69  │   33247   │    203     │   51.2   │ $0.10 │  17.5%  │
+├───────────────────────┼───────┼───────────┼────────────┼──────────┼───────┼─────────┤
+│         TOTAL         │  418  │   190134  │   24556    │  410.0   │ $0.94 │  100.0% │
+└───────────────────────┴───────┴───────────┴────────────┴──────────┴───────┴─────────┘
+
+BY SEARCH PHASE:
+┌──────────┬───────┬───────────┬────────────┬──────────┬─────────┐
+│   Name   │ Calls │ Input Tok │ Output Tok │ Time (s) │ % Total │
+├──────────┼───────┼───────────┼────────────┼──────────┼─────────┤
+│  expand  │  328  │   146319  │   24466    │  342.6   │  77.0%  │
+│ simulate │   90  │   43815   │     90     │   67.4   │  23.0%  │
+├──────────┼───────┼───────────┼────────────┼──────────┼─────────┤
+│  TOTAL   │  418  │   190134  │   24556    │  410.0   │  100.0% │
+└──────────┴───────┴───────────┴────────────┴──────────┴─────────┘
+
+BY COMPONENT × PHASE:
+┌──────────────────────────────┬───────┬───────────┬────────────┬──────────┬─────────┐
+│             Name             │ Calls │ Input Tok │ Output Tok │ Time (s) │ % Total │
+├──────────────────────────────┼───────┼───────────┼────────────┼──────────┼─────────┤
+│ evaluator_correctness_expand │  163  │   62282   │    3518    │  138.9   │  32.8%  │
+│        policy_expand         │   90  │   45267   │   20739    │  148.1   │  23.8%  │
+│      dynamics_simulate       │   90  │   43815   │     90     │   67.4   │  23.0%  │
+│ evaluator_usefulness_expand  │   69  │   33247   │    203     │   51.2   │  17.5%  │
+│       dynamics_expand        │   6   │    5523   │     6      │   4.5    │   2.9%  │
+├──────────────────────────────┼───────┼───────────┼────────────┼──────────┼─────────┤
+│            TOTAL             │  418  │   190134  │   24556    │  410.0   │  100.0% │
+└──────────────────────────────┴───────┴───────────┴────────────┴──────────┴─────────┘
+
+BY INSTANCE (Top 10 of 30):
+┌───────┬───────┬───────────┬────────────┬──────────┬───────┐
+│  Name │ Calls │ Input Tok │ Output Tok │ Time (s) │  Cost │
+├───────┼───────┼───────────┼────────────┼──────────┼───────┤
+│   3   │   15  │   12299   │    1548    │   20.3   │ $0.06 │
+│   11  │   13  │    9664   │    1921    │   17.2   │ $0.06 │
+│   17  │   15  │    8844   │    1303    │   16.2   │ $0.05 │
+│   12  │   14  │    8755   │    1524    │   16.0   │ $0.05 │
+│   23  │   14  │    8289   │    1212    │   14.7   │ $0.04 │
+│   6   │   15  │    7788   │    383     │   11.0   │ $0.03 │
+│   25  │   15  │    7134   │    740     │   13.6   │ $0.03 │
+│   4   │   15  │    6951   │    837     │   14.4   │ $0.03 │
+│   9   │   12  │    6847   │    1381    │   12.9   │ $0.04 │
+│   10  │   11  │    6820   │    1527    │   14.6   │ $0.04 │
+├───────┼───────┼───────────┼────────────┼──────────┼───────┤
+│ TOTAL │  139  │   83391   │   12376    │  151.0   │ $0.44 │
+└───────┴───────┴───────────┴────────────┴──────────┴───────┘
+
+================================================================================
+[2026-11-04 14:07:38.439] [INFO] [root] Evaluation results saved to C:\Users\eula.sang\codex-web\FTEC5660_LiTS_Reproducibility\assignment\runs\formal_steps1_seed33_20261104T060020661248Z\eval_results.json

@@ -1,0 +1,21 @@
+{
+  "search": {
+    "calls": 0,
+    "successful_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "api_wall_seconds": 0
+  },
+  "evaluation": {
+    "calls": 0,
+    "successful_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "api_wall_seconds": 0,
+    "upstream_results": null
+  },
+  "served_models": [],
+  "per_question_depth": [],
+  "max_observed_depth": null,
+  "mean_max_observed_depth": null
+}

@@ -1,0 +1,159 @@
+{
+  "n_attempts": 1,
+  "temperature": null,
+  "accuracy": 0.8,
+  "examples": [
+    {
+      "idx": 0,
+      "correct": true,
+      "score": 1.0
+    },
+    {
+      "idx": 1,
+      "correct": true,
+      "score": 1.0
+    },
+    {
+      "idx": 2,
+      "correct": true,
+      "score": 1.0
+    },
+    {
+      "idx": 3,
+      "correct": false,
+      "score": 0.0
+    },
+    {
+      "idx": 4,
+      "correct": true,
+      "score": 1.0
+    },
+    {
+      "idx": 5,
+      "correct": true,
+      "score": 1.0
+    },
+    {
+      "idx": 6,
+      "correct": true,
+      "score": 1.0
+    },
+    {
+      "idx": 7,
+      "correct": true,
+      "score": 1.0
+    },
+    {
+      "idx": 8,
+      "correct": false,
+      "score": 0.0
+    },
+    {
+      "idx": 9,
+      "correct": false,
+      "score": 0.0
+    },
+    {
+      "idx": 10,
+      "correct": true,
+      "score": 1.0
+    },
+    {
+      "idx": 11,
+      "correct": true,
+      "score": 1.0
+    },
+    {
+      "idx": 12,
+      "correct": true,
+      "score": 1.0
+    },
+    {
+      "idx": 13,
+      "correct": true,
+      "score": 1.0
+    },
+    {
+      "idx": 14,
+      "correct": false,
+      "score": 0.0
+    },
+    {
+      "idx": 15,
+      "correct": true,
+      "score": 1.0
+    },
+    {
+      "idx": 16,
+      "correct": true,
+      "score": 1.0
+    },
+    {
+      "idx": 17,
+      "correct": true,
+      "score": 1.0
+    },
+    {
+      "idx": 18,
+      "correct": true,
+      "score": 1.0
+    },
+    {
+      "idx": 19,
+      "correct": false,
+      "score": 0.0
+    },
+    {
+      "idx": 20,
+      "correct": true,
+      "score": 1.0
+    },
+    {
+      "idx": 21,
+      "correct": true,
+      "score": 1.0
+    },
+    {
+      "idx": 22,
+      "correct": false,
+      "score": 0.0
+    },
+    {
+      "idx": 23,
+      "correct": true,
+      "score": 1.0
+    },
+    {
+      "idx": 24,
+      "correct": true,
+      "score": 1.0
+    },
+    {
+      "idx": 25,
+      "correct": true,
+      "score": 1.0
+    },
+    {
+      "idx": 26,
+      "correct": true,
+      "score": 1.0
+    },
+    {
+      "idx": 27,
+      "correct": true,
+      "score": 1.0
+    },
+    {
+      "idx": 28,
+      "correct": true,
+      "score": 1.0
+    },
+    {
+      "idx": 29,
+      "correct": true,
+      "score": 1.0
+    }
+  ],
+  "dataset_name": "math500",
+  "result_dir": "C:\\Users\\eula.sang\\codex-web\\FTEC5660_LiTS_Reproducibility\\assignment\\runs\\formal_steps10_seed11_20261104T061208181330Z"
+}

@@ -1,0 +1,302 @@
+{
+  "search": {
+    "calls": 509,
+    "successful_calls": 509,
+    "input_tokens": 292492,
+    "output_tokens": 32251,
+    "api_wall_seconds": 504.7265170008177
+  },
+  "evaluation": {
+    "calls": 30,
+    "successful_calls": 30,
+    "input_tokens": 34849,
+    "output_tokens": 1178,
+    "api_wall_seconds": 28.429659000365064,
+    "upstream_results": {
+      "n_attempts": 1,
+      "temperature": null,
+      "accuracy": 0.9333333333333333,
+      "examples": [
+        {
+          "idx": 0,
+          "correct": true,
+          "score": 1.0
+        },
+        {
+          "idx": 1,
+          "correct": true,
+          "score": 1.0
+        },
+        {
+          "idx": 2,
+          "correct": true,
+          "score": 1.0
+        },
+        {
+          "idx": 3,
+          "correct": true,
+          "score": 1.0
+        },
+        {
+          "idx": 4,
+          "correct": true,
+          "score": 1.0
+        },
+        {
+          "idx": 5,
+          "correct": true,
+          "score": 1.0
+        },
+        {
+          "idx": 6,
+          "correct": true,
+          "score": 1.0
+        },
+        {
+          "idx": 7,
+          "correct": true,
+          "score": 1.0
+        },
+        {
+          "idx": 8,
+          "correct": false,
+          "score": 0.0
+        },
+        {
+          "idx": 9,
+          "correct": true,
+          "score": 1.0
+        },
+        {
+          "idx": 10,
+          "correct": true,
+          "score": 1.0
+        },
+        {
+          "idx": 11,
+          "correct": true,
+          "score": 1.0
+        },
+        {
+          "idx": 12,
+          "correct": true,
+          "score": 1.0
+        },
+        {
+          "idx": 13,
+          "correct": true,
+          "score": 1.0
+        },
+        {
+          "idx": 14,
+          "correct": true,
+          "score": 1.0
+        },
+        {
+          "idx": 15,
+          "correct": true,
+          "score": 1.0
+        },
+        {
+          "idx": 16,
+          "correct": true,
+          "score": 1.0
+        },
+        {
+          "idx": 17,
+          "correct": true,
+          "score": 1.0
+        },
+        {
+          "idx": 18,
+          "correct": true,
+          "score": 1.0
+        },
+        {
+          "idx": 19,
+          "correct": true,
+          "score": 1.0
+        },
+        {
+          "idx": 20,
+          "correct": true,
+          "score": 1.0
+        },
+        {
+          "idx": 21,
+          "correct": true,
+          "score": 1.0
+        },
+        {
+          "idx": 22,
+          "correct": false,
+          "score": 0.0
+        },
+        {
+          "idx": 23,
+          "correct": true,
+          "score": 1.0
+        },
+        {
+          "idx": 24,
+          "correct": true,
+          "score": 1.0
+        },
+        {
+          "idx": 25,
+          "correct": true,
+          "score": 1.0
+        },
+        {
+          "idx": 26,
+          "correct": true,
+          "score": 1.0
+        },
+        {
+          "idx": 27,
+          "correct": true,
+          "score": 1.0
+        },
+        {
+          "idx": 28,
+          "correct": true,
+          "score": 1.0
+        },
+        {
+          "idx": 29,
+          "correct": true,
+          "score": 1.0
+        }
+      ],
+      "dataset_name": "math500",
+      "result_dir": "C:\\Users\\eula.sang\\codex-web\\FTEC5660_LiTS_Reproducibility\\assignment\\runs\\formal_steps3_seed11_20261104T060020709445Z"
+    }
+  },
+  "served_models": [
+    "deepseek-flash"
+  ],
+  "per_question_depth": [
+    {
+      "query_idx": 0,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 1,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 10,
+      "max_depth": 2
+    },
+    {
+      "query_idx": 11,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 12,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 13,
+      "max_depth": 2
+    },
+    {
+      "query_idx": 14,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 15,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 16,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 17,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 18,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 19,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 2,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 20,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 21,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 22,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 23,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 24,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 25,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 26,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 27,
+      "max_depth": 2
+    },
+    {
+      "query_idx": 28,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 29,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 3,
+      "max_depth": 3
+    },
+    {
+      "query_idx": 4,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 5,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 6,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 7,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 8,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 9,
+      "max_depth": 1
+    }
+  ],
+  "max_observed_depth": 3,
+  "mean_max_observed_depth": 1.1666666666666667
+}

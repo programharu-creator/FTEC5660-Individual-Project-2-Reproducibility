@@ -1,0 +1,86 @@
+{
+  "formal_runs": [
+    {
+      "max_steps": 1,
+      "local_seed": 11,
+      "run_directory": "formal_steps1_seed11_20261104T060020631441Z",
+      "evidence_directory": "steps1_seed11"
+    },
+    {
+      "max_steps": 1,
+      "local_seed": 22,
+      "run_directory": "formal_steps1_seed22_20261104T060020665254Z",
+      "evidence_directory": "steps1_seed22"
+    },
+    {
+      "max_steps": 1,
+      "local_seed": 33,
+      "run_directory": "formal_steps1_seed33_20261104T060020661248Z",
+      "evidence_directory": "steps1_seed33"
+    },
+    {
+      "max_steps": 3,
+      "local_seed": 11,
+      "run_directory": "formal_steps3_seed11_20261104T060020709445Z",
+      "evidence_directory": "steps3_seed11"
+    },
+    {
+      "max_steps": 3,
+      "local_seed": 22,
+      "run_directory": "formal_steps3_seed22_20261104T060020706446Z",
+      "evidence_directory": "steps3_seed22"
+    },
+    {
+      "max_steps": 3,
+      "local_seed": 33,
+      "run_directory": "formal_steps3_seed33_20261104T060020695087Z",
+      "evidence_directory": "steps3_seed33"
+    },
+    {
+      "max_steps": 10,
+      "local_seed": 11,
+      "run_directory": "formal_steps10_seed11_20261104T061208181330Z",
+      "evidence_directory": "steps10_seed11"
+    },
+    {
+      "max_steps": 10,
+      "local_seed": 22,
+      "run_directory": "formal_steps10_seed22_20261104T060020788007Z",
+      "evidence_directory": "steps10_seed22"
+    },
+    {
+      "max_steps": 10,
+      "local_seed": 33,
+      "run_directory": "formal_steps10_seed33_20261104T060020766543Z",
+      "evidence_directory": "steps10_seed33"
+    }
+  ],
+  "excluded_attempts": [
+    {
+      "run_directory": "formal_steps10_seed11_20261104T060020735857Z",
+      "status": "incomplete",
+      "error_type": "RuntimeError",
+      "model_calls": 520,
+      "input_tokens": 339443,
+      "output_tokens": 36513
+    },
+    {
+      "run_directory": "smoke_steps3_seed11_20261104T055349206930Z",
+      "status": "incomplete",
+      "error_type": "RuntimeError",
+      "model_calls": 11,
+      "input_tokens": 3614,
+      "output_tokens": 284
+    },
+    {
+      "run_directory": "smoke_steps3_seed11_20261104T055504063849Z",
+      "status": "incomplete",
+      "error_type": "OSError",
+      "model_calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  ],
+  "executed_assignment_commit": "fea9659",
+  "note": "One complete run per fixed depth/seed combination. Incomplete attempts are retained and excluded, never selected by accuracy."
+}

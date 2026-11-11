@@ -1,0 +1,144 @@
+{
+  "search": {
+    "calls": 520,
+    "successful_calls": 520,
+    "input_tokens": 339443,
+    "output_tokens": 36513,
+    "api_wall_seconds": 540.9564101988217
+  },
+  "evaluation": {
+    "calls": 0,
+    "successful_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "api_wall_seconds": 0,
+    "upstream_results": null
+  },
+  "served_models": [
+    "deepseek-flash"
+  ],
+  "per_question_depth": [
+    {
+      "query_idx": 0,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 1,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 10,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 11,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 12,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 13,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 14,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 15,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 16,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 17,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 18,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 19,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 2,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 20,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 21,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 22,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 23,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 24,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 25,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 26,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 27,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 28,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 29,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 3,
+      "max_depth": 4
+    },
+    {
+      "query_idx": 4,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 5,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 6,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 7,
+      "max_depth": 1
+    },
+    {
+      "query_idx": 8,
+      "max_depth": 3
+    },
+    {
+      "query_idx": 9,
+      "max_depth": 1
+    }
+  ],
+  "max_observed_depth": 4,
+  "mean_max_observed_depth": 1.1666666666666667
+}
