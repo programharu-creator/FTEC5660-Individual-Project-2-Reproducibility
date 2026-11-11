@@ -13,5 +13,11 @@
   "pending_submission_items": [
     "Publish/push the local Git history to a personal GitHub repository.",
     "Record and share a Zoom presentation no longer than 15 minutes."
-  ]
+  ],
+  "submission_deferred": true,
+  "submission_note": "Public GitHub upload authorized; video and final course submission pending.",
+  "github_upload_requested": true,
+  "github_visibility": "public",
+  "github_repository": "programharu-creator/FTEC5660-project-3",
+  "video_status": "pending recording"
 }
