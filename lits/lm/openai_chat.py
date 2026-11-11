@@ -128,7 +128,10 @@ class OpenAIChatModel(LanguageModel):
         # Only add for non-OpenAI endpoints (vLLM, etc.) to avoid API errors
         extra_body = None
         is_custom_endpoint = self.client.base_url and "api.openai.com" not in str(self.client.base_url)
-        if is_custom_endpoint and not self.enable_thinking:
+        if self.client.base_url.host == "api.deepseek.com":
+            # DeepSeek uses its own thinking switch, rather than vLLM's template options.
+            extra_body = {"thinking": {"type": "enabled" if self.enable_thinking else "disabled"}}
+        elif is_custom_endpoint and not self.enable_thinking:
             extra_body = {"chat_template_kwargs": {"enable_thinking": False}}
 
         tool_options = {}
@@ -142,6 +145,11 @@ class OpenAIChatModel(LanguageModel):
                 }}
                 for tool in tools
             ]
+            if self.client.base_url.host == "api.deepseek.com" and not self.client.base_url.path.startswith("/beta"):
+                # DeepSeek strict tool schemas require its /beta endpoint.
+                # Keep the schema and LiTS's local result validation on the stable API.
+                for tool in tool_options["tools"]:
+                    tool["function"].pop("strict", None)
             if parallel_tool_calls is not None:
                 tool_options["parallel_tool_calls"] = parallel_tool_calls
             if tool_choice is not None:

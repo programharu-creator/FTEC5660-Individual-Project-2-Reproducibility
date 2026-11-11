@@ -11,7 +11,7 @@ Design:
 """
 
 import os
-import torch
+# API-only runs do not need the unused torch dependency.
 from dataclasses import dataclass, field
 from inspect import Parameter, signature
 from typing import List, Optional, Dict, Any, Set
