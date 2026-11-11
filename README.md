@@ -18,6 +18,7 @@ This project runs the authors' LiTS MCTS workflow with DeepSeek and measures the
 - [Results and sample variance](assignment/deliverables/formal_results.json)
 - [Plot](assignment/deliverables/depth_comparison.png)
 - [Raw evidence and restoration instructions](assignment/evidence/README.md)
+- [Source snapshots and browser upload provenance](assignment/provenance/README.md)
 - [Chinese experiment guide](assignment/README_CN.md)
 
 ## Experiment and results

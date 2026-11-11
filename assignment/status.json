@@ -1,5 +1,5 @@
 {
-  "stage": "formal_experiments_and_materials_complete",
+  "stage": "public_materials_uploaded_video_pending",
   "name": "SANG Yuchen",
   "student_id": "1155262204",
   "offline_tests_passed": 8,
@@ -11,13 +11,17 @@
   "source_fingerprints_identical": true,
   "api_key_in_git": false,
   "pending_submission_items": [
-    "Publish/push the local Git history to a personal GitHub repository.",
-    "Record and share a Zoom presentation no longer than 15 minutes."
+    "Record and share a Zoom presentation no longer than 15 minutes.",
+    "Add the accessible recording link to VIDEO_LINK.md.",
+    "Submit the report, public GitHub URL and recording link through the course submission channel."
   ],
   "submission_deferred": true,
-  "submission_note": "Public GitHub upload authorized; video and final course submission pending.",
+  "submission_note": "Materials published through browser fork and staged web commits; video and final course submission pending.",
   "github_upload_requested": true,
   "github_visibility": "public",
   "github_repository": "programharu-creator/FTEC5660-Individual-Project-2-Reproducibility",
-  "video_status": "pending recording"
+  "video_status": "pending recording",
+  "recording_script_language": "English",
+  "recording_script_target_minutes": 12,
+  "github_upload_method": "browser fork and staged GitHub web uploads"
 }

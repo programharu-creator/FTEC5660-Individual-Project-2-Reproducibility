@@ -1,0 +1,74 @@
+{
+  "published_at_utc": "2026-11-11T02:21:57.763023+00:00",
+  "method": "GitHub browser fork and staged web uploads",
+  "repository": "https://github.com/programharu-creator/FTEC5660-Individual-Project-2-Reproducibility",
+  "upstream_commit": "25e94d862cb4514c22d9a80a635e392461769df7",
+  "verification": "Compared GitHub commit tree SHAs with the exact local Git snapshot tree SHAs; all seven complete snapshots match.",
+  "evidence_files_sha256_verified": 92,
+  "mapping": [
+    {
+      "stage": "01-1",
+      "local_commit": "ca326982c5f4ab93784a7bc6becbff2e3447ebb7",
+      "github_commit": "6d9ce8be50576af74f64cd6edb3553c976d9cdbd",
+      "local_tree": "d88526be6cce6a4e869d2c90fec879d4a7a3a662",
+      "complete_local_snapshot": true,
+      "tree_equality_verified": true
+    },
+    {
+      "stage": "02-1",
+      "local_commit": "e5dd920f5a261d34049afe98aaad89de25e0136a",
+      "github_commit": "736adfdd05369c75152e5c1e68d207ae23dd96b0",
+      "local_tree": "215eea8cb37cccf37e0129497d0b0d52dc09e1b5",
+      "complete_local_snapshot": true,
+      "tree_equality_verified": true
+    },
+    {
+      "stage": "03-1",
+      "local_commit": "1b6735b5ae4bf28c92bad86ba1d34d37ff12bd5e",
+      "github_commit": "6b9c7da432e0d269f5eda0813e0a4fbb8d26a244",
+      "local_tree": "e38932920e670c073b12ca0447733d704131fd7f",
+      "complete_local_snapshot": true,
+      "tree_equality_verified": true
+    },
+    {
+      "stage": "04-1",
+      "local_commit": "fea9659d162caef645eda0a24b648f5eb70c15dd",
+      "github_commit": "9f5b3e484860de200a976843c13cc92d7dc9ea00",
+      "local_tree": "e44f2aed7d94c45665a65dfd183cd59b18c6672a",
+      "complete_local_snapshot": true,
+      "tree_equality_verified": true
+    },
+    {
+      "stage": "05-1",
+      "local_commit": "6f7f5794a723a861ba2dc7bcc51ead0d7955a246",
+      "github_commit": "8b10f926f48681007fd361ccdeed96f95f98613d",
+      "local_tree": "76971d8659399f5071b9336cb486b5bad8cc1d4f",
+      "complete_local_snapshot": false,
+      "tree_equality_verified": null
+    },
+    {
+      "stage": "05-2",
+      "local_commit": "6f7f5794a723a861ba2dc7bcc51ead0d7955a246",
+      "github_commit": "ea45685b0ecab2fc23383225d7c8e0c4631ab53b",
+      "local_tree": "76971d8659399f5071b9336cb486b5bad8cc1d4f",
+      "complete_local_snapshot": true,
+      "tree_equality_verified": true
+    },
+    {
+      "stage": "06-1",
+      "local_commit": "dacbfbd552ba89eb6a6fd9c4fcc7ade1831a388e",
+      "github_commit": "896d6467e49b735243fce17d81f04bf108933877",
+      "local_tree": "570bc1e847f48dbae1c03241f5e0f69ed29815d9",
+      "complete_local_snapshot": true,
+      "tree_equality_verified": true
+    },
+    {
+      "stage": "07-1",
+      "local_commit": "b5d410d38c42f6c061946b264fbfbc851851c763",
+      "github_commit": "457ea27b43378bfce444594769f81b269846470d",
+      "local_tree": "d9bad3bb22fcf2682ca31aec952cf0b37e432b3f",
+      "complete_local_snapshot": true,
+      "tree_equality_verified": true
+    }
+  ]
+}

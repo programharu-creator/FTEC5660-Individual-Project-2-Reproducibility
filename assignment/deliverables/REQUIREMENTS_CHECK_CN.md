@@ -5,7 +5,7 @@
 | 老师要求 | 现有材料与结论 | 状态 / 剩余事项 |
 |---|---|---|
 | 个人完成，填写姓名学号 | 报告及幻灯片含 SANG Yuchen / 1155262204 | 已有 |
-| 可运行的公开 agentic 项目 | LiTS，使用作者 MCTS 数学推理、候选评分、答案投票流程 | 已运行 |
+| 可运行的公开 agentic 项目 | LiTS（老师原列表第 3 项），使用作者 MCTS 数学推理、候选评分、答案投票流程 | 已运行 |
 | 明确复现目标，并与原项目比较 | 报告第 1 页引用 Table 6 的 37% / 100 题；明确模型、奖励和样本不同 | 已有；属于替换模型后的流程/行为复现，并非同条件复现 37% |
 | 至少一项范围明确且可衡量的修改 | DeepSeek 作为各组共同环境；主要比较 max_steps=1/3/10，其他正式参数固定 | 已有 |
 | 可用小规模子集 | 固定顺序前 30 道数值题；记录数据 revision 和 SHA256 | 已有；小样本和 pilot 重叠已披露 |
@@ -13,9 +13,9 @@
 | 报告不超过 10 页 | `FTEC5660_LiTS_DeepSeek_Report.pdf` 共 5 页 | 已有 |
 | 报告含目标、环境、指标、结果、修改、调试及结论 | 报告第 1-5 页；配套 plan、CSV、日志和 debug diary | 已有 |
 | 更换模型时记录 provider、model、base URL、解码参数、prompt 改动 | plan、config、每次请求 ledger；说明 role-specific 参数与最后一步提示受深度影响 | 已有；不能声称 DeepSeek 因果上优于原模型 |
-| GitHub README 有安装和运行步骤 | 根目录 README 含 Python 3.12、锁定依赖、preflight、正式运行、离线恢复命令 | 已有本地文件；上传后以远端校验为准 |
-| 修改分步骤 commits，不是一次大包 | 本地保存 adapter、实验环境、UTF-8、方案冻结、结果等独立 commits | 已有本地历史；需完成公开上传核验 |
-| 不提交 secrets / API keys | `.env` 被忽略；上传前检查 Git 跟踪文件和历史 | 仅上传通过检查的内容 |
+| GitHub README 有安装和运行步骤 | 根目录 README 含 Python 3.12、锁定依赖、preflight、正式运行、离线恢复命令 | 已公开；离线 preflight 通过，无 API 调用 |
+| 修改分步骤 commits，不是一次大包 | 公开 fork 中分开提交 adapter、实验环境、UTF-8、方案冻结、证据、报告和讲稿 | 已有；网页提交与本地快照的对应关系见 `assignment/provenance/` |
+| 不提交 secrets / API keys | `.env` 被忽略；已检查本地 Git 跟踪文件和历史 | 检查未发现本地 API key；仅上传 Git 快照内的选定文件 |
 | 不超过 15 分钟的 Zoom 录制链接 | 现有 10 页幻灯片；新增英文约 12 分钟逐字稿及逐段开屏指引 | **仍需本人录制** |
 | 提交 report + GitHub link + presentation link 三项 | 报告已有；公开仓库与视频地址应分别提供 | **视频链接、访问权限检查及课程平台最终提交仍待完成** |
 
