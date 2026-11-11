@@ -12,3 +12,5 @@
 
 - First live smoke: all 11 DeepSeek requests succeeded (3614 input / 284 output tokens), then upstream checkpoint writing failed under Windows cp950 on a superscript character. Retained the incomplete run. The launcher now restarts in Python UTF-8 mode on Windows.
 - Added a Git attribute preserving the downloaded dataset bytes; platform line-ending conversion must not invalidate its SHA256.
+
+- Completed smoke: 1/1 correct, 11 search + 1 voting call, search 9.15 s / voting 1.00 s. Pilot: 4/5 correct, 71 search + 4 voting calls, total about 70 s, per-question maximum depths [1,1,1,3,1]. Before any formal run, changed the planned depth grid from [5,10,15] to [1,3,10] to include a binding short budget. Keep the same 30-question prefix and disclose pilot overlap.
