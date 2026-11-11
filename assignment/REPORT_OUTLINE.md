@@ -16,4 +16,4 @@ Maximum length: 10 pages
 8. Debug diary: environment, endpoint compatibility, data/version issues, and fixes, with evidence.
 9. Conclusions and limitations: small sample, API nondeterminism, model alias changes, reward-model mismatch and no original-model causal comparison.
 
-Results pending. No accuracy, token-cost or timing result has been measured yet.
+Completed report and measured results are in assignment/deliverables/. This file retains the initial report outline.

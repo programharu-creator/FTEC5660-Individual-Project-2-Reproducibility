@@ -55,20 +55,18 @@ def main():
                         calls += 1
                         input_tokens += rec.get("usage", {}).get("prompt_tokens", 0)
                         output_tokens += rec.get("usage", {}).get("completion_tokens", 0)
-                for facts in run.glob("search_facts_*.json"):
-                    try:
-                        completed_questions += json.loads(facts.read_text(encoding="utf-8")).get("status") == "complete"
-                    except (json.JSONDecodeError, FileNotFoundError):
-                        pass
+                # Filename counts avoid opening a facts file while Windows replaces it.
+                # These are saved-output counts; study.py separately verifies completion.
+                completed_questions += len(list((run / "terminal_nodes").glob("terminal_nodes_*.json")))
             finished = sum(j["process"].poll() is not None for j in jobs)
             guard_value = input_tokens * 0.30 / 1e6 + output_tokens * 1.20 / 1e6
-            manifest.update(completed_jobs=finished, completed_question_runs=completed_questions,
+            manifest.update(completed_jobs=finished, saved_question_outputs=completed_questions,
                 input_tokens=input_tokens, output_tokens=output_tokens, api_calls=calls,
                 no_cache_peak_rate_guard_usd=guard_value)
             write(directory / "batch_manifest.json", manifest)
             now = time.monotonic()
             if now - last_report >= 30 or finished == len(jobs):
-                print(json.dumps({k:manifest[k] for k in ["completed_jobs", "completed_question_runs", "api_calls", "input_tokens", "output_tokens"]}), flush=True)
+                print(json.dumps({k:manifest[k] for k in ["completed_jobs", "saved_question_outputs", "api_calls", "input_tokens", "output_tokens"]}), flush=True)
                 last_report = now
             if finished == len(jobs):
                 break

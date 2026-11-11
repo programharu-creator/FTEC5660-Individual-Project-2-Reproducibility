@@ -1,6 +1,6 @@
 # FTEC5660：LiTS + DeepSeek 复现作业
 
-当前阶段：准备环境和数据，尚未调用真实模型。所有正式结果须来自后续真实运行。
+当前阶段：已完成 9 组正式实验、报告和演示材料。结果见 [RESULTS_CN.md](deliverables/RESULTS_CN.md)。GitHub 推送和 Zoom 录像链接仍待完成。
 
 ## 实验内容
 
@@ -72,3 +72,11 @@ python -m venv .venv
 DeepSeek stable tool API: strict is omitted on the normal endpoint (beta-only feature); upstream local tool-result validation is retained. See https://api-docs.deepseek.com/guides/tool_calls/ .
 
 Cost reporting: use api_calls.jsonl token totals and the provider billing dashboard. Ignore upstream automatic dollar estimates unless their assumed prices are replaced with the dated DeepSeek prices, including cache tiers. No monetary estimate has been measured or reported by this setup.
+
+## Restore saved evidence without API calls
+
+Run python assignment/reporting/restore_evidence.py, then install assignment/reporting/requirements-report.txt and run python assignment/reporting/build_deliverables.py. The existing environment has no pip; use uv pip, or create a fresh venv with standard python -m venv. Report generation requires no key and no model inference.
+
+Recorded decoding is role-specific. The plan model top_p is a default, while existing binary-scoring calls also use 0.95. Exact request values are in api_calls.jsonl.
+
+Push the existing local Git history to a new personal repository to preserve the stepwise commits. The ZIP contains source and evidence, not the .git directory or private .env.

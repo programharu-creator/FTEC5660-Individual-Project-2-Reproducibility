@@ -8,4 +8,4 @@
 12–14 min: blockers, conclusions and recommendations.
 14–15 min: repository and reproducibility instructions.
 
-Fill this outline after real experiments. Record a Zoom video and submit its accessible link.
+The completed 10-slide PDF and recording outline are in assignment/deliverables/. Record a Zoom video and submit its accessible link.

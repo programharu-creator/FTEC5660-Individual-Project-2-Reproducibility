@@ -1,0 +1,11 @@
+{
+  "all_live_model_calls": 5043,
+  "successful_calls": 5043,
+  "input_tokens": 2906345,
+  "output_tokens": 310132,
+  "formal_selected_calls": 4425,
+  "no_cache_peak_rate_estimate_usd": 1.2440619,
+  "pricing_basis": "Conservative all-input cache-miss peak estimate: USD 0.30/M input and 1.20/M output. Actual cached/off-peak billing can be lower; not a billed amount.",
+  "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing/",
+  "pricing_checked_date": "2026-11-04"
+}

@@ -1,0 +1,136 @@
+[
+  {
+    "max_steps": 1,
+    "local_seed": 11,
+    "cases": [
+      {
+        "idx": 19,
+        "prediction": "72°",
+        "reference": "72"
+      }
+    ]
+  },
+  {
+    "max_steps": 1,
+    "local_seed": 22,
+    "cases": [
+      {
+        "idx": 19,
+        "prediction": "72°",
+        "reference": "72"
+      }
+    ]
+  },
+  {
+    "max_steps": 1,
+    "local_seed": 33,
+    "cases": [
+      {
+        "idx": 19,
+        "prediction": "72°",
+        "reference": "72"
+      }
+    ]
+  },
+  {
+    "max_steps": 3,
+    "local_seed": 11,
+    "cases": [
+      {
+        "idx": 22,
+        "prediction": "12 cm",
+        "reference": "12"
+      }
+    ]
+  },
+  {
+    "max_steps": 3,
+    "local_seed": 22,
+    "cases": [
+      {
+        "idx": 19,
+        "prediction": "72°",
+        "reference": "72"
+      },
+      {
+        "idx": 22,
+        "prediction": "12 cm",
+        "reference": "12"
+      }
+    ]
+  },
+  {
+    "max_steps": 3,
+    "local_seed": 33,
+    "cases": [
+      {
+        "idx": 14,
+        "prediction": "$78",
+        "reference": "78"
+      },
+      {
+        "idx": 19,
+        "prediction": "72°",
+        "reference": "72"
+      },
+      {
+        "idx": 22,
+        "prediction": "12 cm",
+        "reference": "12"
+      }
+    ]
+  },
+  {
+    "max_steps": 10,
+    "local_seed": 11,
+    "cases": [
+      {
+        "idx": 14,
+        "prediction": "$78",
+        "reference": "78"
+      },
+      {
+        "idx": 19,
+        "prediction": "72°",
+        "reference": "72"
+      },
+      {
+        "idx": 22,
+        "prediction": "12 cm",
+        "reference": "12"
+      }
+    ]
+  },
+  {
+    "max_steps": 10,
+    "local_seed": 22,
+    "cases": [
+      {
+        "idx": 14,
+        "prediction": "$78",
+        "reference": "78"
+      },
+      {
+        "idx": 19,
+        "prediction": "72°",
+        "reference": "72"
+      }
+    ]
+  },
+  {
+    "max_steps": 10,
+    "local_seed": 33,
+    "cases": [
+      {
+        "idx": 19,
+        "prediction": "72°",
+        "reference": "72"
+      },
+      {
+        "idx": 22,
+        "prediction": "12 cm",
+        "reference": "12"
+      }
+    ]
+  }
+]

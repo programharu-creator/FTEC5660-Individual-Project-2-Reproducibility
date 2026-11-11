@@ -47,3 +47,6 @@ assignment/.cache/
 .env.*
 !.env.example
 !assignment/.env.example
+
+assignment/deliverables/*preview*.png
+assignment/deliverables/*.zip
