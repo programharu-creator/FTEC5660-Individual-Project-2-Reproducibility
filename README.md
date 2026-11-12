@@ -4,13 +4,16 @@
 **Student ID:** 1155262204  
 **Course:** Agentic AI for Business and FinTech (FTEC5660)
 
+**Material author:** eula
+
 This project runs the authors' LiTS MCTS workflow with DeepSeek and measures the effect of changing the maximum search depth. Code, the report, presentation slides and experimental evidence are ready. **The Zoom presentation video is pending and will be added later.**
 
 ## Submission materials
 
 - [Report: 5 pages](assignment/deliverables/FTEC5660_LiTS_DeepSeek_Report.pdf)
-- [Presentation slides: 10 pages](assignment/deliverables/FTEC5660_Presentation.pdf)
-- [12-minute English recording script and screen directions](assignment/deliverables/RECORDING_SCRIPT_EN.md)
+- [Editable PowerPoint: 10 self-contained slides](assignment/deliverables/FTEC5660_Presentation.pptx)
+- [Matching presentation PDF: 10 pages](assignment/deliverables/FTEC5660_Presentation.pdf)
+- [10-minute English script with slide directions](assignment/deliverables/RECORDING_SCRIPT_EN.md)
 - [Printable recording script](assignment/deliverables/FTEC5660_Recording_Script_EN.pdf)
 - [Assignment requirements checklist (Chinese)](assignment/deliverables/REQUIREMENTS_CHECK_CN.md)
 - [Video link: pending recording](assignment/deliverables/VIDEO_LINK.md)
@@ -20,6 +23,10 @@ This project runs the authors' LiTS MCTS workflow with DeepSeek and measures the
 - [Raw evidence and restoration instructions](assignment/evidence/README.md)
 - [Source snapshots and browser upload provenance](assignment/provenance/README.md)
 - [Chinese experiment guide](assignment/README_CN.md)
+
+The presentation includes the settings, code excerpt, all nine trial scores, resource plots, saved reasoning example, troubleshooting records, offline check, scoring examples and reproduction commands. Recording uses the slide show throughout. The 1,056-word narration is 66.5% of the previous version and is also included in the PowerPoint speaker notes. Author metadata for the regenerated presentation and guide is eula.
+
+To rebuild the presentation PDF from the included records, run `python assignment/reporting/build_presentation.py`, then `python assignment/reporting/build_recording_guide.py` for the printable guide. On Windows with PowerPoint already available, add `--render` to the first command to rebuild the editable PowerPoint and its matching PDF. The saved offline check is included in `presentation_evidence.json`.
 
 ## Experiment and results
 

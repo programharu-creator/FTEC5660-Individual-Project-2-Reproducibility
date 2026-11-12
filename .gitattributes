@@ -2,3 +2,4 @@ assignment/data/math500_numeric.jsonl -text
 assignment/evidence/** -text whitespace=cr-at-eol
 assignment/deliverables/*.pdf -text -diff
 assignment/deliverables/*.png -text -diff
+assignment/deliverables/*.pptx -text -diff

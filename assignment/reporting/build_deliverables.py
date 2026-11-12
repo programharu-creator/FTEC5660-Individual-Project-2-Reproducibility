@@ -262,7 +262,7 @@ def build_report(rows, groups):
         canvas.drawRightString(A4[0]-44,25,str(doc.page))
     pdf = OUT / "FTEC5660_LiTS_DeepSeek_Report.pdf"
     doc=SimpleDocTemplate(str(pdf),pagesize=A4,rightMargin=44,leftMargin=44,topMargin=40,bottomMargin=42,
-                         title="Reproducing LiTS with DeepSeek",author="SANG Yuchen")
+                         title="Reproducing LiTS with DeepSeek",author="eula")
     doc.build(story,onFirstPage=page_footer,onLaterPages=page_footer)
     import pymupdf
     with pymupdf.open(pdf) as pages:
@@ -273,80 +273,9 @@ def build_report(rows, groups):
 
 
 def build_slides(groups):
-    from reportlab.pdfgen import canvas
-    from reportlab.lib import colors
-    from reportlab.lib.utils import ImageReader
-    from textwrap import wrap
-    width,height=960,540
-    c=canvas.Canvas(str(OUT/"FTEC5660_Presentation.pdf"),pagesize=(width,height))
-    baseline=next(g for g in groups if g["max_steps"]==10)
-    slides=[
-        ("LiTS + DeepSeek reproducibility",[
-            "FTEC5660 | SANG Yuchen | 1155262204",
-            "Question: how does maximum search depth affect accuracy and resource use?",
-            "One fixed model; one fixed 30-question subset; three repeated runs."]),
-        ("Project and reproduction target",[
-            "Run the authors' MCTS workflow for numerical-answer MATH500 tasks.",
-            "Policy proposes reasoning actions; transition builds a trajectory; reward scores it.",
-            "Paper Table 6 is context: our model, reward setup and sample size differ."]),
-        ("Fixed source, data and model",[
-            "Pinned Git commit and Hugging Face dataset revision; SHA256 verified.",
-            "CPython 3.12.12, API-only dependencies, DeepSeek Flash, thinking disabled.",
-            "Per-request parameters, usage and model alias recorded; no keys in Git."]),
-        ("Controlled modification",[
-            "Maximum steps = 1, 3, 10; all groups enforce the same depth bound.",
-            "Other controls: 10 MCTS iterations; branching 3; rollout 2; scoring fixed.",
-            "Pilot informed the depth grid before formal experiments; overlap is disclosed."]),
-        ("Measured results",[
-            f"Depth {g['max_steps']}: accuracy {mean_sd(g,'accuracy',100)}%; "
-            f"tokens/question {g['tokens_per_question_mean']:.0f}; "
-            f"seconds/question {g['seconds_per_question_mean']:.1f}." for g in groups]),
-        ("Accuracy, tokens and time",[]),
-        ("Why a step is not a token budget",[
-            "One generated action may contain a complete multi-operation derivation.",
-            "The cap also changes the repository's final-step instruction.",
-            "A larger external search budget does not guarantee better final answers."]),
-        ("Blockers and fixes",[
-            "Prepared an isolated compatible Python environment.",
-            "Adapted DeepSeek thinking and stable tool-schema options.",
-            "Fixed Windows UTF-8 artifact writing; preserved incomplete attempts."]),
-        ("Evidence and limitations",[
-            "Nine complete formal runs; 270 question-runs; only 30 distinct questions.",
-            "Same-source fingerprints, trees, configs, numeric checker and raw usage saved.",
-            "Strict scoring penalizes units/currency; small sample and pilot overlap limit conclusions."]),
-        ("Reproduce and conclude",[
-            f"Default depth 10: {mean_sd(baseline,'accuracy',100)}% on this subset.",
-            "Follow assignment/README_CN.md; inspect run_manifest and usage_summary.",
-            "Submit the report, GitHub repository link and a Zoom recording under 15 minutes."]),
-    ]
-    script=[]
-    for number,(title,bullets) in enumerate(slides,1):
-        c.setFillColor(colors.HexColor("#f7fafc")); c.rect(0,0,width,height,fill=1,stroke=0)
-        c.setFillColor(colors.HexColor("#156082")); c.rect(0,height-12,width,12,fill=1,stroke=0)
-        c.setFont("Helvetica-Bold",27); c.drawString(48,height-74,title)
-        if number==6:
-            c.drawImage(ImageReader(str(OUT/"depth_comparison.png")),35,110,width=890,height=280,preserveAspectRatio=True,mask="auto")
-        else:
-            y=height-145
-            c.setFillColor(colors.HexColor("#243746"))
-            for bullet in bullets:
-                lines=wrap(bullet,width=79)
-                c.setFont("Helvetica",18)
-                for i,line in enumerate(lines):
-                    c.drawString(55 if i else 48,y,("- " if i==0 else "  ")+line)
-                    y-=28
-                y-=18
-        c.setFont("Helvetica",10); c.setFillColor(colors.HexColor("#667085"))
-        c.drawString(48,28,"LiTS reproducibility | All numbers come from completed formal runs")
-        c.drawRightString(width-40,28,f"{number} / {len(slides)}")
-        c.showPage()
-        script.append(f"## Slide {number}: {title}\n\n" + "\n".join("- "+b for b in bullets) + "\n")
-    c.save()
-    (OUT/"SLIDE_OUTLINE_EN.md").write_text(
-        "# Recording guide (target 10-12 minutes; maximum 15)\n\n"
-        "Share this PDF in Zoom, record yourself explaining the results, "
-        "and submit an accessible recording link. These files are presentation materials, not a recorded video.\n\n"
-        + "\n".join(script),encoding="utf-8")
+    # Author defaults for generated material follow the workspace convention.
+    import build_presentation
+    build_presentation.main()
 
 
 def main():

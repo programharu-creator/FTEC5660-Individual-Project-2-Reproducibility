@@ -43,7 +43,8 @@ def build():
         if not table_rows:
             return
         data = [[Paragraph(inline(v), styles["cell"]) for v in row] for row in table_rows]
-        table = Table(data, colWidths=[72, 40, 215, 180], repeatRows=1, hAlign="LEFT")
+        widths = [85, 45, 377] if len(data[0]) == 3 else [72, 40, 215, 180]
+        table = Table(data, colWidths=widths, repeatRows=1, hAlign="LEFT")
         table.setStyle(TableStyle([
             ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#e7f0f5")),
             ("GRID", (0, 0), (-1, -1), .35, colors.HexColor("#b8c7d1")),
@@ -84,7 +85,7 @@ def build():
 
     path = OUT / "FTEC5660_Recording_Script_EN.pdf"
     SimpleDocTemplate(str(path), pagesize=A4, leftMargin=44, rightMargin=44, topMargin=38, bottomMargin=44,
-                      title="FTEC5660 - 12-minute English recording guide", author="SANG Yuchen").build(
+                      title="FTEC5660: ten minute English recording guide", author="eula").build(
                           story, onFirstPage=footer, onLaterPages=footer)
     print(path)
 

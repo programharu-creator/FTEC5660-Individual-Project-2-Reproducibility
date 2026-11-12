@@ -22,6 +22,11 @@
   "github_repository": "programharu-creator/FTEC5660-Individual-Project-2-Reproducibility",
   "video_status": "pending recording",
   "recording_script_language": "English",
-  "recording_script_target_minutes": 12,
-  "github_upload_method": "browser fork and staged GitHub web uploads"
+  "recording_script_target_minutes": 10,
+  "github_upload_method": "browser fork and staged GitHub web uploads",
+  "author": "eula",
+  "recording_script_spoken_words": 1056,
+  "presentation_self_contained": true,
+  "presentation_editable_powerpoint": true,
+  "external_window_switches": 0
 }

@@ -1,0 +1,58 @@
+{
+  "author": "eula",
+  "preflight_check": {
+    "status": "passed",
+    "python": "3.12.12",
+    "dataset_rows": 316,
+    "formal_rows": 30,
+    "depth_cap_enabled": true,
+    "numeric_checker": "passed",
+    "api_key": "present",
+    "real_api_calls": 0,
+    "author": "eula"
+  },
+  "preflight_date": "2026-11-12",
+  "request_record": {
+    "call": 1,
+    "phase": "search",
+    "at_utc": "2026-11-04T06:00:21.175256+00:00",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 1e-06,
+      "top_p": 0.95,
+      "max_tokens": 512,
+      "n": 1,
+      "stop": null,
+      "extra_body": {
+        "thinking": {
+          "type": "disabled"
+        }
+      }
+    },
+    "prompt_sha256": "d1e7022a973c0e96161fad2ffff20818108d54d7c8dbbe515fdf0f58c15a40a2",
+    "status": "ok",
+    "response_id": "de7907d3-a2e2-4ea6-ac02-a6fc6aaa3225",
+    "served_model": "deepseek-flash",
+    "usage": {
+      "completion_tokens": 121,
+      "prompt_tokens": 455,
+      "total_tokens": 576,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 256,
+        "image_tokens": null,
+        "text_tokens": null
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 199
+    },
+    "finish_reasons": [
+      "stop"
+    ],
+    "seconds": 1.4675113999983296
+  },
+  "question_example": "full_tree_0.json",
+  "question_source": "assignment/evidence/steps1_seed11/full_trees.jsonl"
+}
